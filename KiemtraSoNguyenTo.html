@@ -7,28 +7,27 @@
 <body>
 <script>
 
-    function isPrime(number) {
+  function isPrime(number) {
 
-        let n = 2;
+        let N = 2;
         let count = 0;
         while (number){
             let m=1;
-
-            for (i=2 ; i<=Math.sqrt(n) ; i++){
-                if (n%i === 0){
+            
+            for (j=2;j<=Math.sqrt(N);j++){
+                if (N%j === 0){
                     m=0;
                     break;
                 }
             }
-
             if (m === 1){
                 count++;
-                document.write(n + "<br>");
+                document.write(N + "<br>");
             }
-            else if (count>=i){
+            if (count>=i){
                 break;
             }
-            n++;
+            N++;
         }
     }
     let i = parseFloat(prompt("nhập số lượng số nguyên tố"));

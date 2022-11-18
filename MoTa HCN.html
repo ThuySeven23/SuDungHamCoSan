@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mo ta hinh chu nhat</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    class Rectangle{
+        constructor(length , width ) {
+            this.length = length;
+            this.width = width;
+        }
+
+        area_calculation()
+        {
+            return this.length * this.width;
+        }
+        perimeter_calculation()
+        {
+            return (this.length + this.width) *2;
+        }
+
+    }
+    //Nhap chieu dai va chieu rong
+    // var chieudai , chieurong , hcn , cv;
+    // chieudai    = +prompt("Nhap chieu dai");
+    // chieurong   = +prompt("Nhap chieu rong");
+
+
+    var moTaHCN = new Rectangle(10 , 5);
+
+    //Thay doi chieu dai chieu rong
+    moTaHCN.length = 15;
+    moTaHCN.width = 12;
+
+
+    var dien_tich = moTaHCN.area_calculation();
+    var chu_vi = moTaHCN.perimeter_calculation();
+
+    document.write("Dien tich hinh chu nhat = " + dien_tich + "<br>");
+    document.write("Chu vi hinh chu nhat = " + chu_vi);
+</script>
+</html>

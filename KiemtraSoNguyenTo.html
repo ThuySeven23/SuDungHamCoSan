@@ -9,13 +9,13 @@
 
     function isPrime(number) {
 
-        let N = 2;
+        let n = 2;
         let count = 0;
         while (number){
             let m=1;
 
-            for (j=2;j<=Math.sqrt(N);j++){
-                if (N%j === 0){
+            for (j=2 ; j<=Math.sqrt(n) ; j++){
+                if (n%j === 0){
                     m=0;
                     break;
                 }
@@ -23,12 +23,12 @@
 
             if (m === 1){
                 count++;
-                document.write(N + "<br>");
+                document.write(n + "<br>");
             }
             if (count>=i){
                 break;
             }
-            N++;
+            n++;
         }
     }
     let i = parseFloat(prompt("nhập số lượng số nguyên tố"));
